@@ -3,10 +3,26 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <title>Agora</title>
+        <title>{% block title %}Agora{% endblock %}</title>
     </head>
 
     <body>
-        Well, something's working.
+        {% block body %}
+            {% block header %}
+                <header>
+
+                </header>
+            {% endblock %}
+            <main>
+                {% block main %}
+
+                {% endblock %}
+            </main>
+            {% block footer %}
+                <footer>
+
+                </footer>
+            {% endblock %}
+        {% endblock %}
     </body>
 </html>
