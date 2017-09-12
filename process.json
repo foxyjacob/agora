@@ -4,7 +4,7 @@
 
       "interpreter"   : "/usr/bin/nodejs",
       "cwd"           : "/var/www/agora/",
-      "script"        : "app.js",
+      "script"        : "index.js",
 
       "exec_mode"     : "cluster",
       "watch"         : true,
