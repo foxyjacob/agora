@@ -8,21 +8,11 @@
 
     <body>
         {% block body %}
-            {% block header %}
-                <header>
-
-                </header>
-            {% endblock %}
+            {% include "includes/header.html.njk" %}
             <main>
-                {% block main %}
-
-                {% endblock %}
+                {% block main %}{% endblock %}
             </main>
-            {% block footer %}
-                <footer>
-
-                </footer>
-            {% endblock %}
+            {% include "includes/footer.html.njk" %}
         {% endblock %}
     </body>
 </html>

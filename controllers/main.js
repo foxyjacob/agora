@@ -14,7 +14,7 @@ var router = require("express").Router();
  * ========================================================================= */
 router.route("/")
     .get((req, res) => {
-        return res.render("home.html.njk");
+        return res.render("landing.html.njk");
     });
 
 

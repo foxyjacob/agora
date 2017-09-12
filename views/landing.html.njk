@@ -1,0 +1,43 @@
+{% extends "base.html.njk" %}
+
+ {% block main %}
+    <div id="agora-owl">
+        <img src="" alt="Agora-owl-mascot">
+        Welcome to the first fully crowdsourced business!
+    </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/tQe5kEB3qMA" frameborder="0" allowfullscreen></iframe>
+    <form id="sign-up">
+        <fieldset id="sign-up-with-social">
+            <input type="button">Sign Up with LinkedIn</input>
+            <input type="button">Sign Up with Facebook</input>
+        </fieldset>
+        <span id="or">or</span>
+        <fieldset id="sign-up-with-our-form">
+            <input type="text" placeholder="John"></input>
+            <input type="text" placeholder="Doe"></input>
+            <input type="email" placeholder="Email Address"></input>
+            <input type="password" placeholder="Password"></input>
+            By creating an account, you agree to our <a href="terms">Terms &amp; Conditions</a>.
+            <input type="button" placeholder="">Create Account</input>
+        </fieldset>
+        <fieldset id="already-have-an-account">
+            Already own an account?
+            <input type="button" placeholder="">Sign In</input>
+        </fieldset>
+    </form>
+    <div id="learn-more">
+        <h2>Learn More</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br>
+
+            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+        </p>
+        <a href="mailto:contact@projectx.com">contact@projectx.com</a>
+        <ul id="social">
+            <li>Facebook</li>
+            <li>LinkedIn</li>
+            <li>Twitter</li>
+            <li>YouTube</li>
+        </ul>
+    </div>
+ {% endblock %}
