@@ -72,7 +72,7 @@ app.use("/", controllers.main);
 // Pass a 404 error for all requests that make it here
 app.use(error.notFound);
 // Log errors
-app.use(error.log);
+app.use(error.logger);
 // Handle all other errors
 app.use(error.generic);
 
