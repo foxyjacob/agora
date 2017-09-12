@@ -1,16 +1,11 @@
 "use strict";
 
 /* Main Site Routes
- * ================
- *
- *
  * ========================================================================= */
 
 var router = require("express").Router();
 
 /* Home Page
- * =========
- *
  * ========================================================================= */
 router.route("/")
     .get((req, res) => {
@@ -19,8 +14,6 @@ router.route("/")
 
 
 /* Join Page
- * =========
- *
  * ========================================================================= */
 router.route("/join")
     .get((req, res) => {
@@ -37,13 +30,11 @@ router.route("/login")
         res.render("login.html.njk");
     });
 
-/* Security Page
- * =============
- *
+/* Terms and Conditions page
  * ========================================================================= */
-router.route("/privacy")
+router.route("/terms")
     .get((req, res) => {
-        return res.render("privacy.html.njk");
+        return res.render("terms.html.njk");
     });
 
 
