@@ -1,0 +1,23 @@
+{
+  "name": "agora",
+  "version": "1.0.0",
+  "description": "A website to test my skills, as part of a recruitment test for a digital web agency.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foxyjacob/agora.git"
+  },
+  "author": "foxyjacob",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/foxyjacob/agora/issues"
+  },
+  "homepage": "https://github.com/foxyjacob/agora#readme",
+  "dependencies": {
+    "express": "^4.15.4",
+    "nunjucks": "^3.0.1"
+  }
+}
