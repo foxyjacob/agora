@@ -12,14 +12,12 @@
  * ========================================================================= */
 
 
-var express      = require("express")                // Lightweight framework; for abstracting common tasks
-  , nunjucks     = require("nunjucks")               // Templating engine; for rendering dynamic documents
-  , bunyan       = require("bunyan")                 // JSON logging utility
-  , controllers  = require("./controllers")          // Controllers...
-  , error        = require("./middlewares/error")    // Error-handling middlewares
-  , config       = require("./settings");            // Load configuration
-
-
+var express      = require("express")             // Lightweight framework; for abstracting common tasks
+  , nunjucks     = require("nunjucks")            // Templating engine; for rendering dynamic documents
+  , bunyan       = require("bunyan")              // JSON logging utility
+  , controllers  = require("./controllers")       // Controllers...
+  , error        = require("./middlewares/error") // Error-handling middlewares
+  , config       = require("./settings");         // Load configuration
 
 // Initialize an Express application
 // ---------------------------------
