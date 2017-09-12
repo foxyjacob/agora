@@ -1,0 +1,13 @@
+body {
+  background-color  : rgb(132,220,248);
+  background-image  : url("/static/background-pixels.png");
+  background-repeat : repeat;
+}
+
+main {
+  width  : 800px;
+  margin : auto;
+}
+
+iframe {
+}
