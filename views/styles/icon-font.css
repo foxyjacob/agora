@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('/projects/agora/static/fonts/icomoon.eot?vgjot0');
-  src:  url('/projects/agora/static/fonts/icomoon.eot?vgjot0#iefix') format('embedded-opentype'),
-    url('/projects/agora/static/fonts/icomoon.ttf?vgjot0') format('truetype'),
-    url('/projects/agora/static/fonts/icomoon.woff?vgjot0') format('woff'),
-    url('/projects/agora/static/fonts/icomoon.svg?vgjot0#icomoon') format('svg');
+  src:  url('/static/fonts/icomoon.eot?vgjot0');
+  src:  url('/static/fonts/icomoon.eot?vgjot0#iefix') format('embedded-opentype'),
+    url('/static/fonts/icomoon.ttf?vgjot0') format('truetype'),
+    url('/static/fonts/icomoon.woff?vgjot0') format('woff'),
+    url('/static/fonts/icomoon.svg?vgjot0#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
