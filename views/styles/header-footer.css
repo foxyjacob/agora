@@ -36,7 +36,7 @@ header::after {
 
 /* -------------------------------------------------------------------------------- */
 
-footer {
+#main-footer {
   margin-top : 100px;
   padding    : 10px;
   text-align : right;
@@ -44,10 +44,14 @@ footer {
   background : rgb(70,70,70);
 }
 
-footer a {
+#main-footer a {
   color : rgb(155,155,155);
 }
 
-footer a:hover {
+#main-footer a:hover {
   color : rgb(255,255,255);
+}
+
+#main-footer {
+  font-family: monospace;
 }
