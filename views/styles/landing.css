@@ -15,7 +15,44 @@ a:active{ color: rgb(0,200,255); }
 
 /* ------------------------------------------------------------------------- */
 
+#agora-owl {
+  position: relative;
+  top: -160px;
+  z-index: 1;
+}
+
+#agora-owl img {
+  position : absolute;
+  top      : -25px;
+  left     : 200px;
+  z-index  : 4;
+}
+
+#agora-owl::after {
+  content    : "";
+  position   : absolute;
+  top        : -50px;
+  left       : 350px;
+  background : url("/static/speech-bubble.png");
+  width      : 315px;
+  height     : 144px;
+  z-index    : 5;
+}
+
+#agora-owl span {
+  position: absolute;
+  top: -18px;
+  left: 410px;
+  z-index: 6;
+  width: 250px;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+
 #iframe-wrapper {
+  margin-top     : 160px;
   position       : relative;
   width          : 100%;
   height         : 0;

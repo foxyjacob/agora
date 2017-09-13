@@ -19,7 +19,7 @@
 }
 
 #sign-up-name       { display : flex; }
-#sign-up-name input { flex    : 1   ; }
+#sign-up-name input { flex    : 1   ; width: auto; }
 
 #sign-up button {
   display       : block;
@@ -54,6 +54,7 @@
   background    : rgb(220,220,220);
   padding       : 20px;
   border-radius : 0 0 8px 8px;
+  text-align    : right;
 }
 
 #already-have-an-account button {
