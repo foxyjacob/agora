@@ -1,0 +1,294 @@
+/* Normalize
+ * =========
+ * This stylesheet attempts to standardize the way elements are shown by
+ * default across all browsers.
+ *
+ * NOTE: Always remember to give :hover, :focus, and :active rules to
+ *       any element which may recieve focus, namely:
+ *           - a
+ *           - area
+ *           - input
+ *           - select
+ *           - textarea
+ *           - button
+ *           - iframe (this item is only included in this list for
+ *             completeness, iframe elements may recieve focus, but
+ *             require no :focus effects.)
+ *
+ * ========================================================================= */
+
+/* XXX the universal selector in this context applies rules to every single element in the document, this can be a resource-intensive process and cause a heavy load resulting lagging visual effects and/or lack of page responsivness */
+* {
+  box-sizing   : border-box;
+  margin       : 0;
+  padding      : 0;
+
+  font-family  : inherit;
+  font         : inherit;
+  text-align   : inherit;
+  line-height  : inherit;
+
+  color        : inherit;
+  border-style : none;
+  outline      : none;
+  box-shadow   : none;
+
+  transition   : all 0.4s ease;
+}
+
+
+html {
+  background:      rgb(5,5,5); /* Give the root element a background in case the user's viewport is larger than the maximum defined body width */
+  scroll-behavior: smooth;
+}
+
+
+body {
+  display:     block;
+  min-width:   320px;
+  width:       100%;
+  max-width:   2560px;
+  margin:      0 auto;     /* Center the body in the user's viewport if the viewport is bigger than the body's max-width */
+
+  font-family: Tahoma, Geneva, sans-serif;
+  /*font-family: Helvetica, "Helvetica Neue", "Segoe UI", Arial, freesans, sans-serif;*/
+  line-height: 1.55;
+
+  color:      rgb(50,50,50);
+  background: rgb(245,245,245);
+}
+
+
+/* HTML5 elements (incomplete)
+ * TODO: complete
+ * ------------------------------------------------------------------------- */
+main {
+    display: block;
+}
+
+
+/* Lists
+ * ------------------------------------------------------------------------- */
+ol, ul, dl { list-style: none; }
+
+
+/* Anchors
+ * ------------------------------------------------------------------------- */
+a {
+    color: rgb(60,60,200);
+    text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active { color: rgb(160,160,240); }
+
+
+/* An animation for :focus
+ *
+ *     Since outline was set to none on all elements, we define a new set of
+ *     rules that allows good accessability for users which like to, or have
+ *     to navigate using only a keyboard. When an element receives focus, it
+ *     gently fades in and out, making it clear which element is in focus.
+ *
+ * ------------------------------------------------------------------------- */
+@keyframes blink {
+    0%   { opacity: 1; }
+    15%  { opacity: 1; }
+    100% { opacity: 0.2; }
+}
+
+a:focus,
+area:focus,
+select:focus,
+button:focus,
+input[type="submit"]:focus {
+  animation: blink;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+
+/* Hidden elements
+ * ------------------------------------------------------------------------- */
+template,
+.hidden,
+[hidden],
+[hidden="hidden"] {
+  display: none !important;
+}
+
+
+
+
+/* Typography
+ * ========================================================================= */
+
+/* Emphasized text | The title of a work | A definition term | Text in an alternate voice or mood
+ * ------------------------------------------------------------------------- */
+em, cite, dfn, i { font-style: italic; }
+
+/* Bold text | Important text
+ * ------------------------------------------------------------------------- */
+b, strong { font-weight: bold; }
+
+/* Headings
+ * ------------------------------------------------------------------------- */
+h1 { font-size: 2rem;   font-weight: bold; }
+h2 { font-size: 1.8rem; font-weight: normal; }
+h3 { font-size: 1.5rem; font-weight: normal; }
+h4 { font-size: 1.2rem; font-weight: normal; }
+h5 { font-size: 1rem;   font-weight: normal; }
+h6 { font-size: 1rem;   font-weight: normal; }
+p  { font-size: 1rem;   font-weight: normal; }
+h1, h2, h3, h4, h5, h6, p { padding: 0.4rem 0; }
+
+
+/* Put some space between headings
+ * ------------------------------------------------------------------------- */
+/* h1:not(:first-child):not(:first-of-type),
+h2:not(:first-child):not(:first-of-type),
+h3:not(:first-child):not(:first-of-type),
+h4:not(:first-child):not(:first-of-type),
+h5:not(:first-child):not(:first-of-type),
+h6:not(:first-child):not(:first-of-type) { margin-top: 3rem; } */
+
+
+/* Firefox specific button fixes
+ * ------------------------------------------------------------------------- */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style : none;
+  padding      : 0;
+}
+
+/* Define highlighting color for "marked" text
+ * ------------------------------------------------------------------------- */
+mark {
+  background-color: rgba(255, 244, 204, 0.4);
+}
+
+
+
+
+/* The following are bits and peices adapted from...
+ * normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css
+ * as well as some of our own markup
+ * ========================================================================= */
+
+
+/* Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ * ------------------------------------------------------------------------- */
+article,
+aside,
+details, /* 1 */
+figcaption,
+figure,
+footer,
+header,
+main, /* 2 */
+menu,
+nav,
+section,
+summary { /* 1 */
+  display: block;
+}
+
+
+/* Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ * ------------------------------------------------------------------------- */
+progress {
+  vertical-align: baseline;
+}
+
+
+/* 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ * ------------------------------------------------------------------------- */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+
+/* Add the correct font size in all browsers.
+ * ------------------------------------------------------------------------- */
+small {
+  font-size: 80%;
+}
+
+
+/* Prevent `sub` and `sup` elements from affecting the line height in all
+ * browsers.
+ * ------------------------------------------------------------------------- */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+
+/* 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ * ------------------------------------------------------------------------- */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+
+/* 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ * ------------------------------------------------------------------------- */
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+
+/* Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ * ------------------------------------------------------------------------- */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+
+/* Correct the text style of placeholders in Chrome, Edge, and Safari.
+ * ------------------------------------------------------------------------- */
+::-webkit-input-placeholder {
+  opacity: 0.54;
+}
+
+
+/* 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ * ------------------------------------------------------------------------- */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+}
