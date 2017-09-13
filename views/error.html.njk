@@ -1,1 +1,21 @@
 {% extends "base.html.njk" %}
+
+{% block styles %}
+    html {
+        height : 100%;
+    }
+
+    body {
+        background      : rgb(80,50,70);
+        color           : rgb(255,255,255);
+        text-align      : center;
+        display         : flex;
+        height          : 100%;
+        align-items     : center;
+        justify-content : center;
+    }
+{% endblock %}
+
+{% block main %}
+    An error occured. Maybe try again?
+{% endblock %}
