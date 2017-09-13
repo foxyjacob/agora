@@ -82,3 +82,31 @@ a:active{ color: rgb(0,200,255); }
   margin : 14px;
   flex: 1;
 }
+
+/* ------------------------------------------------------------------------- */
+
+#learn-more a {
+  font-size : 22px;
+}
+
+#social {
+  display         : flex;
+  width           : 100%;
+  margin-top      : 20px;
+  padding         : 20px 10px;
+  font-size       : 28px;
+  align-content   : space-around;
+  justify-content : center;
+  box-shadow      : 0 20px 30px -35px rgb(0,0,0), 0 -20px 30px -35px rgb(0,0,0);
+}
+
+#social a {
+  padding : 10px 20px;
+  color   : rgb(255,255,255);
+  opacity : 0.5;
+}
+
+#social a:hover,
+#social a:active {
+  opacity : 1;
+}
