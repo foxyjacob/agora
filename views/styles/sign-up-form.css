@@ -1,26 +1,61 @@
 #sign-up {
   background    : rgb(243,243,243);
   border-radius : 8px;
+  padding-top       : 40px;
+}
+
+#sign-up fieldset {
+  padding-top    : 10px;
+  padding-bottom : 10px;
+}
+
+#or {
+  display    : block;
+  text-align : center;
+}
+
+#sign-up-with-our-form {
+  padding: 20px;
+}
+
+#sign-up-name       { display : flex; }
+#sign-up-name input { flex    : 1   ; }
+
+#sign-up button {
+  display       : block;
+  width         : 80%;
+  background    : rgb(255,255,255);
+  margin        : 10px auto;
+  padding       : 10px;
+  color         : rgb(0,179,168);
+  border-radius : 3px;
   text-align    : center;
-  padding-top   : 40px;
+  font-weight   : bold;
+}
+
+#sign-up button:hover,
+#sign-up button:active {
+  background    : rgb(0,179,168);
+  color         : rgb(255,255,255);
+  cursor        : pointer;
 }
 
 #sign-up input {
-  margin        : 6px;
+  display       : block;
+  text-align    : left;
+  width         : 80%;
+  margin        : 6px auto;
   padding       : 4px;
   background    : rgb(255,255,255);
   border-radius : 3px;
 }
 
-#sign-up input[type=button] {
-
-}
-
-#or {
-
-}
-
 #already-have-an-account {
-  background : rgb(220,220,220);
-  padding    : 20px;
+  background    : rgb(220,220,220);
+  padding       : 20px;
+  border-radius : 0 0 8px 8px;
+}
+
+#already-have-an-account button {
+  display : inline;
 }

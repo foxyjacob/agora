@@ -9,6 +9,10 @@ main {
   margin : auto;
 }
 
+a { color: rgb(0,179,168); }
+a:hover,
+a:active{ color: rgb(0,200,255); }
+
 /* ------------------------------------------------------------------------- */
 
 #iframe-wrapper {
@@ -39,4 +43,5 @@ main {
 #sign-up,
 #learn-more {
   margin : 14px;
+  flex: 1;
 }
