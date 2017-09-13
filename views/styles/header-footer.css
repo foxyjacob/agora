@@ -37,11 +37,11 @@ header::after {
 /* -------------------------------------------------------------------------------- */
 
 footer {
+  margin-top : 100px;
   padding    : 10px;
   text-align : right;
   color      : rgb(220,220,220);
   background : rgb(70,70,70);
-
 }
 
 footer a {

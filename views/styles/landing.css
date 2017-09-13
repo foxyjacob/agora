@@ -16,9 +16,9 @@ a:active{ color: rgb(0,200,255); }
 /* ------------------------------------------------------------------------- */
 
 #agora-owl {
-  position: relative;
-  top: -160px;
-  z-index: 1;
+  position : relative;
+  top      : -160px;
+  z-index  : 1;
 }
 
 #agora-owl img {
@@ -93,20 +93,22 @@ a:active{ color: rgb(0,200,255); }
   display         : flex;
   width           : 100%;
   margin-top      : 20px;
-  padding         : 20px 10px;
-  font-size       : 28px;
+  padding         : 30px 10px;
   align-content   : space-around;
   justify-content : center;
   box-shadow      : 0 20px 30px -35px rgb(0,0,0), 0 -20px 30px -35px rgb(0,0,0);
 }
 
 #social a {
-  padding : 10px 20px;
-  color   : rgb(255,255,255);
-  opacity : 0.5;
+  margin    : 10px 15px;
+  padding   : 10px;
+  color     : rgb(255,255,255);
+  opacity   : 0.8;
+  font-size : 28px;
 }
 
 #social a:hover,
 #social a:active {
   opacity : 1;
+  cursor  : pointer;
 }

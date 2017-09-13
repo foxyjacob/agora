@@ -1,12 +1,11 @@
 #sign-up {
   background    : rgb(243,243,243);
   border-radius : 8px;
-  padding-top       : 40px;
+  padding-top   : 40px;
 }
 
 #sign-up fieldset {
-  padding-top    : 10px;
-  padding-bottom : 10px;
+  padding: 10px 40px;
 }
 
 #or {
@@ -18,12 +17,9 @@
   padding: 20px;
 }
 
-#sign-up-name       { display : flex; }
-#sign-up-name input { flex    : 1   ; width: auto; }
-
 #sign-up button {
   display       : block;
-  width         : 80%;
+  width         : 100%;
   background    : rgb(255,255,255);
   margin        : 10px auto;
   padding       : 10px;
@@ -41,22 +37,36 @@
 }
 
 #sign-up input {
-  display       : block;
   text-align    : left;
-  width         : 80%;
+  width         : 100%;
   margin        : 6px auto;
   padding       : 4px;
   background    : rgb(255,255,255);
   border-radius : 3px;
 }
 
-#already-have-an-account {
+#sign-up-name {
+  display : flex;
+}
+
+#sign-up-name input {
+  flex  : 1;
+  width : calc(100% - 6px);
+}
+
+#sign-up-name div:nth-child(2) {
+  text-align: right;
+}
+
+/* #sign-up #sign-up-create-button {
+  font-size : 24px;
+  padding   : 20px 10px;
+} */
+
+#sign-up #already-have-an-account {
   background    : rgb(220,220,220);
+  margin-top    : 20px;
   padding       : 20px;
   border-radius : 0 0 8px 8px;
   text-align    : right;
-}
-
-#already-have-an-account button {
-  display : inline;
 }
