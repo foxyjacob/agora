@@ -1,8 +1,8 @@
 body {
   background-color  : rgb(132,220,248);
   background-image  :
-    url("/static/background-clouds.svg"),
-    url("/static/background-pixels.png"),
+    url("/projects/agora/static/background-clouds.svg"),
+    url("/projects/agora/static/background-pixels.png"),
     radial-gradient(rgba(200,200,255,0.5), rgba(0,0,0,0)),
     linear-gradient(rgba(20,40,120,0.5), rgba(0,0,0,0));
   background-repeat : no-repeat, repeat;
@@ -38,7 +38,7 @@ a:active{ color: rgb(0,200,255); }
   position   : absolute;
   top        : -50px;
   left       : 350px;
-  background : url("/static/speech-bubble.png");
+  background : url("/projects/agora/static/speech-bubble.png");
   width      : 315px;
   height     : 144px;
   z-index    : 5;
