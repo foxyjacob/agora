@@ -22,6 +22,16 @@ header::after {
   font-weight : bold;
 }
 
+#header-content-wrapper {
+  display   : flex;
+  max-width : 100px;
+}
+
+/* #header-content-wrapper */ #logo {
+  flex       : 1;
+  text-align : left;
+}
+
 /* -------------------------------------------------------------------------------- */
 
 footer {

@@ -1,0 +1,13 @@
+a.account-action {
+  padding       : 6px 12px;
+  margin        : 0 6px;
+  color         : rgb(255,255,255);
+  background    : rgb(0,179,168);
+  border-radius : 3px;
+}
+
+a.account-action:hover,
+a.account-action:active {
+  color         : rgb(0,179,168);
+  background    : rgb(255,255,255);
+}
