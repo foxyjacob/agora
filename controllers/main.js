@@ -7,7 +7,7 @@ var router = require("express").Router();
 
 /* Home Page
  * ========================================================================= */
-router.route("/")
+router.route("/projects/agora")
     .get((req, res) => {
         return res.render("landing.html.njk");
     });
@@ -15,7 +15,7 @@ router.route("/")
 
 /* Join Page
  * ========================================================================= */
-router.route("/join")
+router.route("/projects/agora/join")
     .get((req, res) => {
         return res.render("join.html.njk");
     });
@@ -25,14 +25,14 @@ router.route("/join")
  * Allow the user to enter their credentials and log into their account.
  *
  * ========================================================================= */
-router.route("/login")
+router.route("/projects/agora/login")
     .get((req, res) => {
         res.render("login.html.njk");
     });
 
 /* Terms and Conditions page
  * ========================================================================= */
-router.route("/terms")
+router.route("/projects/agora/terms")
     .get((req, res) => {
         return res.render("terms.html.njk");
     });
