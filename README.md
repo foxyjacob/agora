@@ -6,4 +6,4 @@ I am building this website based on a PSD file to display my current abilities a
 
 <strong>This website will serve no practical function.</strong>
 
-A live version of this website is currently available [here](foxyjacob.com/projects/agora).
+A live version of this website is currently available [here](http://foxyjacob.com/projects/agora).
