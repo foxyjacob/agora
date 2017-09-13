@@ -1,6 +1,8 @@
 {% extends "base.html.njk" %}
 
- {% block main %}
+{% block styles %}{% include "styles/landing.css" %}{% endblock %}
+
+{% block main %}
     <div id="agora-owl">
         <img src="/static/owl.png" alt="Agora-owl-mascot">
         Welcome to the first fully crowdsourced business!
@@ -9,21 +11,21 @@
     <div id="sign-up-and-learn-more">
         <form id="sign-up">
             <fieldset id="sign-up-with-social">
-                <input type="button">Sign Up with LinkedIn</input>
-                <input type="button">Sign Up with Facebook</input>
+                <input type="button">
+                <input type="button">
             </fieldset>
             <span id="or">or</span>
             <fieldset id="sign-up-with-our-form">
-                <input type="text" placeholder="John"></input>
-                <input type="text" placeholder="Doe"></input>
-                <input type="email" placeholder="Email Address"></input>
-                <input type="password" placeholder="Password"></input>
+                <input type="text" placeholder="John">
+                <input type="text" placeholder="Doe">
+                <input type="email" placeholder="Email Address">
+                <input type="password" placeholder="Password">
                 By creating an account, you agree to our <a href="terms">Terms &amp; Conditions</a>.
-                <input type="button" placeholder="">Create Account</input>
+                <input type="button" value="Create Account">
             </fieldset>
             <fieldset id="already-have-an-account">
                 Already own an account?
-                <input type="button" placeholder="">Sign In</input>
+                <input type="button" value="Sign in">
             </fieldset>
         </form>
         <div id="learn-more">
@@ -43,4 +45,4 @@
             </ul>
         </div>
     </div>
- {% endblock %}
+{% endblock %}
