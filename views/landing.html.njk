@@ -3,12 +3,14 @@
 {% block styles %}{% include "styles/landing.css" %}{% endblock %}
 
 {% block main %}
-    <div id="agora-owl">
-        <img src="/static/owl.png" alt="Agora-owl-mascot">
-        Welcome to the first fully crowdsourced business!
-    </div>
-    <div id="iframe-wrapper">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/tQe5kEB3qMA" frameborder="0" allowfullscreen></iframe>
+    <div id="video">
+        <div id="agora-owl">
+            <img src="/static/owl.png" alt="Agora-owl-mascot">
+            Welcome to the first fully crowdsourced business!
+        </div>
+        <div id="iframe-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tQe5kEB3qMA" frameborder="0" allowfullscreen></iframe>
+        </div>
     </div>
     <div id="sign-up-and-learn-more">
         <form id="sign-up">
@@ -40,10 +42,10 @@
             </p>
             <a href="mailto:contact@projectx.com">contact@projectx.com</a>
             <ul id="social">
-                <li>Facebook</li>
-                <li>LinkedIn</li>
-                <li>Twitter</li>
-                <li>YouTube</li>
+                <li><span class="icon-facebook"></span></li>
+                <li><span class="icon-linkedin"></span></li>
+                <li><span class="icon-twitter"></span></li>
+                <li><span class="icon-youtube"></span></li>
             </ul>
         </div>
     </div>
