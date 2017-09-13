@@ -4,12 +4,14 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <title>{% block title %}Agora{% endblock %}</title>
+
+        {# Inline styles are seperated so that they are more easily edited, the ease-of-use outweighs the overhead TODO: condense in production #}
+        {% block defaultStyles %}
+            <style>{% include "styles/normalize.css" %}</style>
+            <style>{% include "styles/header-footer.css" %}</style>
+            <style>{% include "styles/icon-font.css" %}</style>
+        {% endblock %}
         <style>
-            {% block defaultStyles %}
-                {% include "styles/normalize.css" %}
-                {% include "styles/header-footer.css" %}
-                {% include "styles/icon-font.css" %}
-            {% endblock %}
             {% block styles %}{% endblock %}
         </style>
     </head>

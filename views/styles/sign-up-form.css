@@ -1,0 +1,26 @@
+#sign-up {
+  background    : rgb(243,243,243);
+  border-radius : 8px;
+  text-align    : center;
+  padding-top   : 40px;
+}
+
+#sign-up input {
+  margin        : 6px;
+  padding       : 4px;
+  background    : rgb(255,255,255);
+  border-radius : 3px;
+}
+
+#sign-up input[type=button] {
+
+}
+
+#or {
+
+}
+
+#already-have-an-account {
+  background : rgb(220,220,220);
+  padding    : 20px;
+}
